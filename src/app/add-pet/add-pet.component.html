@@ -1,0 +1,14 @@
+
+<div class="container">
+  
+<br/>
+<div class="h3">{{title}} </div>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="container form-group">
+  <input formControlName="name" placeholder="Pet name" class="form-control" >
+</div>
+  <div class="container form-group">  
+  <input formControlName="color" placeholder="Pet Color" class="form-control" >  </div>
+    <button type="submit" class="btn btn-info">Add</button>
+  </form>
+ </div>
