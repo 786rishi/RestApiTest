@@ -6,6 +6,8 @@ export const environment = {
   production: false
 };
 
+
+// its been modified to check whether reflecting on local machine or not
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
