@@ -1,4 +1,4 @@
-interface Pet{
+class Pet{
 
     id: number;
     name: string;

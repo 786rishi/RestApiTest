@@ -2,23 +2,23 @@
 <table id="example" class="table table-striped table-bordered" style="width:100%">
     <thead>
         <tr>
+            <th>Id</th>
             <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
+            <th>Color</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Tiger Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
-            <td>2011/04/25</td>
-            <td>$320,800</td>
+      
+        <tr *ngFor="let pet of pets">
+            <td>{{pet.id}}</td>
+            <td>{{pet.name}}</td>
+            <td>{{pet.color}}</td>
+            <td><div type="button" class="btn btn-warning" on-click="onEdit(pet)">Edit</div></td>
+            <td><div type="button" class="btn btn-danger" on-click="onDelete(pet)">Delete</div></td>
         </tr>
+        
         </tbody>
         </table>
       </div>

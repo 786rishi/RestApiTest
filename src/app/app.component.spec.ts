@@ -1,12 +1,22 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+import { EditPetComponent } from './edit-pet/edit-pet.component';
+import { GetPetComponent } from './get-pet/get-pet.component';
+import {Routes,RouterModule} from '@angular/router';
+import { AddPetComponent } from './add-pet/add-pet.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        EditPetComponent,
+        GetPetComponent,
+        AddPetComponent
       ],
+  providers: [],
+
     }).compileComponents();
   }));
 
